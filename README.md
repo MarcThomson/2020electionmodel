@@ -1,6 +1,7 @@
 # 2020electionmodel
 
-Methodology:
+## Methodology:
+
 1.	Cluster states be demographics to get correlation matrix (may cutoff)
 a.	Census data (provisional?)
 b.	Demographic:
