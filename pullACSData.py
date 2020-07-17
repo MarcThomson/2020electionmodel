@@ -16,6 +16,7 @@ baseAPITail = "&for=state:*&key=e6e686c049dba8c5672e13edb673ee357d9d7295"
 
 dfVariables = pd.read_csv("acsVariables.csv")
 
+
 selectedRows = dfVariables.loc[dfVariables['Include'] == "X"]["Name"]
 selectedRows = selectedRows.reset_index()
 nSelected = selectedRows.count()[0]
@@ -50,3 +51,4 @@ for i in range(nGroups):
         dfTemp = dfTemp.drop(["state","NAME","index"],axis=1)
         df = pd.concat([df, dfTemp], axis=1) #Temp.join(df,on="NAME",how="outer")#
     
+print(df.head())
